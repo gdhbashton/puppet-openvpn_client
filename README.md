@@ -153,7 +153,3 @@ versatility while making no client configuration assumptions. Standard ground
 rules for contributing apply; namely test and document everything.
 
 Most development information can be found in CONTRIBUTING.md.
-
-## Release Notes/Contributors/Etc **Optional**
-
-If you aren't using changelog, put your release notes here (though you should consider using changelog). You may also add any additional sections you feel are necessary or important to include here. Please use the `## ` header.
