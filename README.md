@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/thejandroman/puppet-openvpn_client.svg)](https://travis-ci.org/thejandroman/puppet-openvpn_client)
+
 #### Table of Contents
 
 1. [Overview](#overview)
