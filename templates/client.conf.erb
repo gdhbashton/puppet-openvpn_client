@@ -1,0 +1,67 @@
+# Tunnel options
+<%- unless @dev.nil? -%>
+dev <%= @dev %>
+<%- end -%>
+<%- unless @proto.nil? -%>
+proto <%= @proto %>
+<%- end -%>
+<%- unless @server.nil? -%>
+    <%- unless @port.nil? -%>
+remote <%= @server %> <%= @port %>
+    <%- else -%>
+remote <%= @server %>
+    <%- end -%>
+<%- end -%>
+<%- unless @resolv_retry.nil? -%>
+resolv-retry <%= @resolv_retry %>
+<%- end -%>
+<%- if @nobind -%>
+nobind
+<%- end -%>
+<%- if @persist_key -%>
+persist-key
+<%- end -%>
+<%- if @persist_tun -%>
+persist-tun
+<%- end -%>
+<%- if @persist_remote_ip -%>
+persist-remote-ip
+<%- end -%>
+<%- unless @comp_lzo.nil? -%>
+comp-lzo <%= @comp_lzo %>
+<%- end -%>
+<%- unless @verb.nil? -%>
+verb <%= @verb %>
+<%- end -%>
+<%- unless @ca.nil? -%>
+ca <%= @ca %>
+<%- end -%>
+
+# TLS Mode options
+<%- if @tls_client -%>
+tls-client
+<%- end -%>
+<%- unless @remote_cert_tls.nil? -%>
+remote-cert-tls <%= @remote_cert_tls %>
+<%- end -%>
+
+# Client Mode options
+<%- if @client -%>
+client
+<%- end -%>
+<%- unless @auth_user_pass.nil? -%>
+auth-user-pass <%= @auth_user_pass %>
+<%- end -%>
+
+# Data Channel Encryption options
+<%- unless @auth.nil? -%>
+auth <%= @auth %>
+<%- end -%>
+<%- unless @cipher.nil? -%>
+cipher <%= @cipher %>
+<%- end -%>
+
+# Custom options
+<%- @custom_options.each do |option| -%>
+<%= option %>
+<%- end -%>
