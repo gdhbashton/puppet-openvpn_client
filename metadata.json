@@ -1,41 +1,41 @@
 {
-    "name": "thejandroman-openvpn_client",
-    "version": "0.1.0",
-    "author": "thejandroman",
-    "summary": "Install and configure openvpn client.",
-    "license": "Apache-2.0",
-    "source": "https://github.com/thejandroman/puppet-openvpn_client.git",
-    "project_page": "https://github.com/thejandroman/puppet-openvpn_client",
-    "issues_url": "https://github.com/thejandroman/puppet-openvpn_client/issues",
-    "dependencies": [
-        {
-            "name": "puppetlabs-stdlib",
-            "version_requirement": ">= 1.0.0"
-        }
-    ],
-    "operatingsystem_support": [
-        {
-            "operatingsystem": "Debian",
-            "operatingsystemrelease": [
-                "6",
-                "7",
-                "8"
-            ]
-        },
-        {
-            "operatingsystem": "Ubuntu",
-            "operatingsystemrelease": [
-                "12.04",
-                "14.04"
-            ]
-        },
-        {
-            "operatingsystem": "RedHat",
-            "operatingsystemrelease": [
-                "5",
-                "6",
-                "7"
-            ]
-        }
-    ]
+  "name": "thejandroman-openvpn_client",
+  "version": "0.1.1",
+  "author": "thejandroman",
+  "summary": "Install and configure openvpn client.",
+  "license": "Apache-2.0",
+  "source": "https://github.com/thejandroman/puppet-openvpn_client.git",
+  "project_page": "https://github.com/thejandroman/puppet-openvpn_client",
+  "issues_url": "https://github.com/thejandroman/puppet-openvpn_client/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 1.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "12.04",
+        "14.04"
+      ]
+    },
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    }
+  ]
 }
