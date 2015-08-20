@@ -27,7 +27,7 @@ persist-tun
 <%- if @persist_remote_ip -%>
 persist-remote-ip
 <%- end -%>
-<%- unless @comp_lzo.nil? -%>
+<%- unless @comp_lzo == 'disabled' -%>
 comp-lzo <%= @comp_lzo %>
 <%- end -%>
 <%- unless @verb.nil? -%>
